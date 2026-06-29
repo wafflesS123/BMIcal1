@@ -88,7 +88,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       flex: 3,
                       child: TextField(
                         controller: weightController,
-                        keyboardType: TextInputType.numberWithOptions(decimal: true), // ← for weight & height
+                        keyboardType: TextInputType.numberWithOptions(
+                          decimal: true,
+                        ), // ← for weight & height
                         decoration: InputDecoration(
                           hintText: "Enter weight",
                           filled: true,
@@ -127,7 +129,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       flex: 3,
                       child: TextField(
                         controller: heightController,
-                        keyboardType: TextInputType.numberWithOptions(decimal: true), // ← for weight & height
+                        keyboardType: TextInputType.numberWithOptions(
+                          decimal: true,
+                        ), // ← for weight & height
                         decoration: InputDecoration(
                           hintText: "Enter height",
                           filled: true,
@@ -209,7 +213,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   void _calculateBMI() {
-  // Check empty fields
+    // Check empty fields
     if (weightController.text.isEmpty ||
         heightController.text.isEmpty ||
         ageController.text.isEmpty) {
@@ -223,7 +227,9 @@ class _HomeScreenState extends State<HomeScreen> {
     final double? weight = double.tryParse(weightController.text);
     if (weight == null || weight <= 0) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text("Please enter a valid weight (e.g. 65.5)")),
+        const SnackBar(
+          content: Text("Please enter a valid weight (e.g. 65.5)"),
+        ),
       );
       return;
     }
@@ -232,7 +238,9 @@ class _HomeScreenState extends State<HomeScreen> {
     final double? height = double.tryParse(heightController.text);
     if (height == null || height <= 0) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text("Please enter a valid height (e.g. 170.5)")),
+        const SnackBar(
+          content: Text("Please enter a valid height (e.g. 170.5)"),
+        ),
       );
       return;
     }

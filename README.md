@@ -1,17 +1,65 @@
-# flutter_application_3
+# BMI Calculator App
 
-A new Flutter project.
+## Brief Description
 
-## Getting Started
+The **BMI Calculator App** is a Flutter application that helps users calculate their Body Mass Index (BMI) based on their height and weight. The app supports multiple measurement units (kg/lbs and cm/m/inches), allows users to select their gender and age, and provides personalized BMI results along with health advice.
 
-This project is a starting point for a Flutter application.
+The application features a modern and interactive user interface with gender-based color themes (pink for female and blue for male), an animated BMI gauge, and an information page explaining BMI categories and how BMI is calculated.
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+* Input weight, height, and age
+* Support for multiple units:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  * Weight: Kilograms (kg) and Pounds (lbs)
+  * Height: Centimeters (cm), Meters (m), and Inches (inch)
+* Gender selection with dynamic color themes
+* Automatic BMI calculation
+* BMI classification:
+
+  * Underweight
+  * Normal
+  * Overweight
+  * Obese
+  * Extremely Obese
+* Animated BMI gauge displaying the user's BMI
+* Personalized health advice based on BMI category
+* BMI information page with chart and explanation
+* Smooth navigation between screens
+
+## Technologies Used
+
+* Flutter
+* Dart
+* Syncfusion Flutter Gauges
+
+## Project Structure
+
+```text
+lib/
+├── constants/
+├── models/
+├── screens/
+├── services/
+├── widgets/
+└── main.dart
+```
+
+## How to Run
+
+1. Clone the repository.
+2. Install dependencies:
+
+```bash
+flutter pub get
+```
+
+3. Run the application:
+
+```bash
+flutter run
+```
+
+## Authors
+
+Developed as a Flutter mobile application project.
