@@ -187,7 +187,7 @@ class InfoScreen extends StatelessWidget {
                 },
 
                 child: const Text(
-                  "Back to Home",
+                  "Back",
                   style: TextStyle(fontSize: 18),
                 ),
               ),
